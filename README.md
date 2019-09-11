@@ -9,4 +9,5 @@
 [Группа по Node.js](https://t-do.ru/nodeua)<br>
 [Канал на ютюбе](https://www.youtube.com/TimurShemsedinov)<br>
 [Организация на гитхабе](https://github.com/HowProgrammingWorks)<br>
-[Лектор на гитхабе](https://github.com/tshemsedinov)***<br>
+[Лектор на гитхабе](https://github.com/tshemsedinov)
+[План IP9X](https://github.com/HowProgrammingWorks/Index/blob/master/IP9X.md)***<br>
