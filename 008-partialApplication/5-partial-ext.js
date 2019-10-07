@@ -1,6 +1,12 @@
 'use strict';
 
-const partial = (fn, ...args) => (...rest) => fn(...args.concat(rest));
+const partial = (fn, ...args) => (...rest) => {
+  console.log('-----');
+  console.dir({ name: fn.name });
+  console.dir({ args });
+  console.dir({ rest });
+  fn(...args.concat(rest));
+};
 
 // Usage
 
