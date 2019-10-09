@@ -5,7 +5,8 @@
 const throttle = (timeout, fn, ...args) => {
   let timer;
   let wait = false;
-  let wrapped = null;
+	let wrapped = null;
+	// console.log(!timer); // true
 
   const throttled = (...par) => {
     timer = undefined;
@@ -40,4 +41,4 @@ const timer = setInterval(() => {
 
 setTimeout(() => {
   clearInterval(timer);
-}, 2000);
+}, 200);

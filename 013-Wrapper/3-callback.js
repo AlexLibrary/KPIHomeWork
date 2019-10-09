@@ -5,7 +5,7 @@
 
 // const wrapAsync = (before, after, beforeCb, afterCb, fn) =>
 //   (...args) => {
-//     const callback = arr[arr.length -1];
+//     const callback = args[args.length -1];
 //     if (typeof callback === 'function') {
 //       args[args.length - 1] = (...pars) =>
 //         afterCb(callback(...beforeCb(...pars)));
@@ -21,7 +21,7 @@ const wrapFunction = fn => {
     if (args.length > 0) {
       const callback = args[args.length - 1];
       if (typeof callback === 'function') {
-        args[args.length - 1] = (...args) => {
+        args[args.length - 1] = (...args) => { // function
           console.log('Callback:', fn.name);
           return callback(...args);
         };
@@ -47,7 +47,7 @@ const cloneInterface = anInterface => {
 
 // Usage
 
-const interfaceName = {
+const interfaceName = { // object
   methodName(par1, par2, callback) {
     console.dir({ method: { par1, par2 } });
     callback(null, { field: 'value' });

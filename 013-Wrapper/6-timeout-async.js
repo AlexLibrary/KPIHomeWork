@@ -1,6 +1,18 @@
 'use strict';
 
+/**
+ * д/з
+ * мы можем написать
+ * специальный вариант асинхроннового timeout
+ * который будет ждать не начало вызова а конца вызова,
+ * что бы timeout накладыывался не на вызов функции а
+ * на возврат результата через callback
+ * (НОРМАЛЬНОЕ ДОМАШНЕЕ ЗАДАНИЕ)
+ */
+
 // Wrapper will prevent call after timeout
+
+
 
 const timeout = (msec, fn) => {
   let timer = setTimeout(() => {
@@ -11,7 +23,7 @@ const timeout = (msec, fn) => {
     if (timer) {
       clearTimeout(timer);
       timer = null;
-      return fn(...args);
+      return fn(...args); //$ callback
     }
   };
 };
