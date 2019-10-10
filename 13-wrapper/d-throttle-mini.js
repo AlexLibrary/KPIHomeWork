@@ -6,13 +6,9 @@ const throttle = (timeout, fn, ...args) => {
   let timer;
   let wrapped = null;
 
-  const throttled = () => {
-    timer = undefined;
-  };
-
   wrapped = (...par) => {
     if (!timer) {
-      timer = setTimeout(throttled, timeout);
+      timer = setTimeout((() => timer = undefined), timeout);
       return fn(...args.concat(par));
     }
   };
