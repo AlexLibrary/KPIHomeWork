@@ -2,7 +2,7 @@
 
 // example 1
 
-const {_internal, tooBig, ...cleanObject} = {el1: '1',
+const { _internal, tooBig, ...cleanObject } = {el1: '1',
   _internal:"secret", tooBig:{}, el2: '2', el3: '3'};
 console.log(cleanObject); // {el1: '1', el2: '2', el3: '3'}
 

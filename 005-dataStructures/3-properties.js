@@ -20,7 +20,7 @@ const name = 'Marcus Aurelius';
 const city = 'Rome';
 
 // Old style
-const person1 = { name: name, city: city };
+const person1 = { name, city };
 
 // New style
 const person2 = { name, city };

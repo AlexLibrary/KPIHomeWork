@@ -5,16 +5,16 @@
 const throttle = (timeout, fn, ...args) => {
   let timer;
   let wait = false;
-	let wrapped = null;
+  let wrapped = null;
 
   const throttled = (...par) => {
-		timer = undefined;
+    timer = undefined;
     if (wait) wrapped(...par);
-	};
+  };
 
   wrapped = (...par) => {
     if (!timer) {
-			timer = setTimeout(throttled, timeout, ...par);
+      timer = setTimeout(throttled, timeout, ...par);
       wait = false;
       return fn(...args.concat(par));
     } else {
