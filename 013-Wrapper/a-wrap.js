@@ -3,7 +3,8 @@
 /**
  * Д/З // https://youtu.be/2h9syXN5wO0?t=2230
  * Сделать метод wrapper.resume
- * Если fn === Null то fn = oldFn
+ * // мой вариант (Если fn === Null то fn = oldFn )
+ * с помощью переключателя toggle
  * hasDone // true
  */
 
