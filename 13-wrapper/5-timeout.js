@@ -4,7 +4,7 @@
 
 const timeout = (msec, fn) => {
   let timer = setTimeout(() => {
-		if (timer) console.log('Function timedout', msec);
+    if (timer) console.log('Function timedout', msec);
     timer = null;
   }, msec);
   return (...args) => {
@@ -27,8 +27,8 @@ const fn200 = timeout(200, fn);
 
 setTimeout(() => {
   fn100('first');
-	fn200('second');
-	// fn200('second');
+  fn200('second');
+  // fn200('second');
 }, 150);
 // setTimeout(() => {
 // 	fn200('second');
