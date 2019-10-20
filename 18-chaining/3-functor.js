@@ -4,6 +4,11 @@ const text = (s = '') => ({
   line: a => text(`${s}\n${a}`),
   toString: () => s
 });
+/**
+ * => ({
+ * // return as object
+ * })
+ */
 
 // Usage
 

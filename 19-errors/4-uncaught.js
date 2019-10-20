@@ -2,6 +2,7 @@
 
 process.on('uncaughtException', err => {
   console.log('on uncaughtException: ' + err.message);
+  // process.exit(1);
 });
 
 const sum = (a, b) => {

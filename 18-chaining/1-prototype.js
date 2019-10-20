@@ -20,4 +20,4 @@ const txt = new Text('line1')
   .line('line3')
   .line('line4');
 
-console.log(`${txt}`);
+console.log(`${txt}`); // or console.log(txt.toString);
